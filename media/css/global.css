@@ -60,7 +60,7 @@ a:hover {
     color:#99cccc;
     text-decoration:none;
 }
-#primary_nav li a:hover {
+#primary_nav li a:hover, #primary_nav li a.active {
     color:#cc9999;
 }
 #mainContent {
