@@ -1,0 +1,13 @@
+{% extends "skeleton/_base.html" %}
+
+{% block content %}
+
+{% block content_header %}{% endblock %}
+
+    <div id="content" class="grid_9{% ifequal page.module.name 'links' %} grid_12 wide{% endifequal %}">{% block content_body %}{% endblock %}</div>
+    <div id="sidebar" class="grid_3">{% block sidebar %}{% endblock %}</div>
+ <div class="clear"></div>
+</div>
+
+{% endblock %}
+

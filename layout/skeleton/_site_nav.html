@@ -1,0 +1,26 @@
+{% extends "skeleton/_root.html" %}
+
+{% block all %}
+{% spaceless %}
+<ul id="primary-menu">
+    <li{% ifequal page.module site.module %} class="selected" {% endifequal %}>
+        <a href="{{site.listing_url}}">Home</a>
+    </li>    
+    <li {% ifequal page.module.name 'childbirth-education' %} class="active" {% endifequal %}>
+        <a href="{{site.url}}/childbirth-education/index.html">Childbirth Education</a>
+    </li>
+    <li {% ifequal page.module.name 'doula-services' %} class="active" {% endifequal %}>
+        <a href="{{site.url}}/doula-services/index.html">Doula Services</a>
+    </li>
+    <li {% ifequal page.module.name 'about' %} class="active {{page.module.name}}" {% endifequal %}>
+        <a href="{{site.url}}/about/index.html">About Natalie</a>
+    </li>
+    <li {% ifequal page.module.name 'faqs' %} class="active {{page.module.name}}" {% endifequal %}>
+        <a href="{{site.url}}/faqs/index.html">FAQs</a>
+    </li>
+    <li {% ifequal page.module.name 'links' %} class="active {{page.module.name}}" {% endifequal %}>
+        <a href="{{site.url}}/links/index.html">Links</a>
+    </li>
+</ul>
+{% endspaceless %}
+{% endblock %}

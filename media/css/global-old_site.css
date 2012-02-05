@@ -1,0 +1,175 @@
+@charset "UTF-8";
+/* CSS Document */
+
+html{
+margin:0;
+padding:0;
+}
+body {
+font-size:10px;
+background-color:#99cccc;
+}
+#mainContent {
+background:url(../images/bg.jpg) top repeat-y ;
+margin: 0 auto;
+width:850px;
+overflow:hidden;
+z-index:auto;
+}
+
+#mainContent a#pageHeader {
+background:url(../images/header.jpg) no-repeat 100% 100%;
+/*background-position:0%;
+/*background-position-y:100%;*/
+position: absolute;
+height:120px;
+width:850px;
+}
+
+#mainContent a#pageHeader b {
+display:none;
+}
+
+#TopNav  { 
+	font-weight: 100;
+	padding-top: 120px;
+	position: relative;
+	width: 650px;
+	margin: 0 auto;
+	z-index:100;
+	}
+
+#TopNav ul   { 
+font-size: 20px; 
+position:relative; 
+overflow:hidden;
+}
+
+#TopNav li {
+float: left;
+margin-right: 15px;
+list-style-type:none; 
+height:30px;
+  }
+
+#TopNav a {
+ display:block;  
+color: #99cccc;
+  text-decoration:none; 
+  background:transparent; 
+  /*overflow:hidden;*/
+  /*z-index:3;*/
+  }
+
+#TopNav a:hover {
+	color: #999;
+}
+
+#TopNav b {
+/*z-index:4;*/
+display:none;
+}
+#contentBlock {
+margin-top:-2000px;
+padding-top: 2000px;
+padding-left:70px;
+padding-right:60px;
+position: relative;
+clear:none;
+}
+#left {
+position:relative;
+width:478px;
+float:left;
+clear:none;
+font-size:12px;
+line-height: 18px;
+}
+#left h1 {
+	background:url(../images/title.gif) no-repeat top left; 
+	margin-top:50px; 
+	width: 454px; 
+	height: 82px;
+	}
+#left h1 span {
+display:none;
+}
+#left p{
+margin-right:15px;
+}
+#left h2{
+font-weight:normal;
+font-size:16px;
+text-align:center;
+color:#999999;
+padding-top:10px;
+}
+#left h3 {
+font-weight:normal;
+font-size:12px;
+margin-top:-12px;
+text-align:center;
+color:#99cccc;
+}
+#left h4 {
+font-weight:normal;
+font-size:12px;
+margin-bottom:-7px;
+text-align:left;
+color:#99cccc;
+}
+#left a {
+text-decoration:none;
+color:#99cccc;
+}
+#left a:hover {
+text-decoration:underline;
+color:#999999;
+}
+#left ul {
+list-style-position:outside;
+/*margin-left:-15px;*/
+margin-right:20px;
+}
+#right {
+position:relative;
+float: right;
+width:232px;
+clear:none;
+}
+#right h1{
+background:url(../images/Raven.jpg) no-repeat top left;  
+margin-left:-20px;
+width: 231px; 
+height: 165px;
+}
+#right h1 span {
+display:none;
+}
+#right img {
+padding-top: 40px;
+}
+#footer {
+padding-top:60px;
+background:url(../images/footer.jpg) no-repeat bottom left;  
+position:relative;
+width:850px;
+height:70px;
+clear:both;
+}
+#footer .copyright {
+	text-align: center; 
+	font-size: 9px;
+	color: #99cccc;
+	text-decoration: none;
+	}
+#footer h1{
+margin:-47px 0px 0px 75px;
+background:url(../images/motto.gif) no-repeat bottom left;  
+position:relative;
+width:692px;
+height:37px;
+}
+#footer h1 span {
+display:none;
+}
