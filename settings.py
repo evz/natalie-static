@@ -13,7 +13,7 @@ BACKUP = False
 
 SITE_ROOT = "/"
 SITE_WWW_URL = "http://www.natalieannevans.com"
-SITE_NAME = "Natalie Evans <span>Childbirth Educator &amp; Labor Doula</span>"
+SITE_NAME = "Natalie Evans <span>Childbirth Educator &amp; Birth Doula</span>"
 SITE_AUTHOR = "Natalie Evans"
 
 #URL Configuration
