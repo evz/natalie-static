@@ -1,0 +1,69 @@
+<!doctype html>
+<!--[if lt IE 7 ]> <html lang="en" class="no-js ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="en" class="no-js ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="en" class="no-js ie8"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
+<head>
+    {% block starthead %}{% endblock starthead %}
+    <meta charset="{{ resource.meta.charset }}">
+    <title>{% block title %}{{ resource.meta.title }}{% endblock %}</title>
+    <meta name="description" content="{{ resource.meta.description }}">
+    <meta name="author" content="{{ resource.meta.author }}"> 
+    <meta name="viewport" content="{{ resource.meta.viewport }}">
+    {% block css %}
+    <link rel="stylesheet" href="{{media_url('css/960.css') }}" type="text/css" />
+    <link rel="stylesheet" href="{{media_url('css/reset.css') }}" type="text/css" />
+    <link rel="stylesheet" href="{{media_url('css/global.css') }}" type="text/css" />
+    {% block extra_css %}
+	{% endblock %}
+    {% endblock %}
+	{% block js %}
+    <script type="text/javascript" src="http://use.typekit.com/zaw2yij.js"></script>
+    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+    <script type="text/javascript">
+
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-22871532-1']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+
+    </script>
+    {% block extra_js %}
+	{% endblock %}
+    {% endblock %}
+</head>
+<body id="{{ resource.meta.id if resource.meta.id else resource.slug }}">
+	<div class="container_12 clearfix">
+	    
+        <div id="header">
+            <a href="{{site.url}}/index.html">
+                <h1>Natalie Ann Evans, <span>Childbirth Educator &amp; Birth Doula</span></h1>
+            </a>
+            <h3>natalieannevans [at] gmail [dot] com &bull; (773) 510&ndash;6230</h3>
+        </div>
+        <div id="mainContent">
+            <div id="primary_nav">
+                {% block nav %}
+                {% from "macros.j2" import render_nav with context %}
+                {{ render_nav(menu, 'main_nav') }}
+                {% endblock %}
+            </div>
+        		{% block content %}{% endblock %}
+    		<div class="clear"></div>
+    	</div>
+		{% include "skeleton/_footer.html" %}
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript" src="{{ media_url('js/jquery.corners.js') }}"></script>
+<script type="text/javascript">
+    $(document).ready(function(){
+        $('#mainContent').corner("round 10px");
+    });
+</script>
+</body>
+</html>
